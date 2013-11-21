@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+        <title>The Monkeys -Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title">The Monkeys</h1>
+               
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+
+                <article>
+                    <header>
+                        <h1>Form</h1>
+                   
+                    </header>
+                    
+                        <form name="form" id="form" method="get" action="#" enctype="application/x-www-form-urlencoded">  
+                        <section>
+                            <label for="firstname">First name: <span class="required">*</span></label>  
+                            <input type="text" id="firstname" name="firstname"  placeholder="John" required="required" autofocus="autofocus" value="" />
+						</section>
+                        <section>
+                            <label for="surname">Surname: <span class="required">*</span></label>  
+                            <input type="text" id="surname" name="surname" placeholder="Doe" required="required" value=""  />  
+                        </section>
+                        <section>  
+                            <label for="email">Email Address: <span class="required">*</span></label>  
+                            <input type="email" id="email" name="email" placeholder="johndoe@example.com" required="required" value="" />  
+                       </section>
+                        <section>
+                            <label for="contact">Daytime contact number: <span class="required">*</span></label>  
+                        	<input type="tel" id="contact" name="contact" required="required" value=""  />
+                        </section>
+                        <section>
+                            <label for="address">Address: <span class="required">*</span></label>  
+                            <input type="text" id="address" name="address" required="required" value=""  />  
+                       </section>
+                        <section>
+                            <label for="suburb">Suburb: <span class="required">*</span></label>   
+                            <input type="text" id="suburb" name="suburb"  required="required"  value="" />  
+                        </section>
+                        <section>
+                            <label for="state">State: <span class="required">*</span></label>  
+                            <select id="state" name="state" required="required" >  
+                             	<option value="">Select State </option>  
+                                <option value="ACT">ACT </option>  
+                                <option value="NSW">NSW </option>  
+                                <option value="NT">NT </option>  
+                                <option value="QLD">QLD </option>  
+                                <option value="SA">SA </option>  
+                                <option value="TAS">TAS </option>  
+                                <option value="VIC">VIC </option>  
+                                <option value="WA">WA </option>
+                            </select> 
+						</section>
+                        <section>
+                            <label for="postcode">Postcode: <span class="required">*</span></label>  
+                            <input type="number" id="postcode" name="postcode"  required="required"  value="" />   
+                         </section>
+                        <section>
+                            <label for="enquiry_type">Enquiry type: <span class="required">*</span></label>  
+                            <select id="enquiry_type" name="enquiry_type" required="required" onchange="ProductVal()"  >  
+                            <option value="">Select Enquiry type </option>
+                                <option value="General enquiry">General enquiry </option>  
+                                <option value="Product feedback or enquiry">Product feedback or enquiry </option>  
+                                <option value="Product complaint">Product complaint </option>  
+                            </select> 
+                        </section>
+                        
+                            
+                            <fieldset id="product_info">
+                         
+                        <section>
+                                <label for="product_name">Product name:</label>  
+                                <input type="text" id="product_name" name="product_name" value=""   />   
+                         </section>
+                        <section> 
+                                <label for="product_size">Product size:</label>  
+                                <input type="text" id="product_size" name="product_size" value=""   />
+                       </section>
+                        <section>  
+                                <label for="use_by_date">Use-by date:</label>  
+                                <input type="date" id="use_by_date" name="use_by_date" value=""   /> 
+                        </section>
+                        <section>
+                                <label for="batch_code">Batch code:</label>  
+                                <input type="text" id="batch_code" name="batch_code" value=""   /> 
+                         </section>
+                       
+                            </fieldset>
+                            
+                      
+                        <section>
+                            <label for="enquiry">Enquiry: </label>  
+                            <textarea name="enquiry" rows="5" id="enquiry" ></textarea>  
+                              
+                        </section>
+                         <footer>
+                            <input type="submit" value="Submit" id="submit-button" formmethod="get" />  
+                            <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>  
+                          </footer>
+                        </form>  
+                    
+                </article>
+
+
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <p>Shafraz Kamil - for The Monkeys</p>
+            </footer>
+        </div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+
+        <script src="js/main.js"></script>
+         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+</html>
