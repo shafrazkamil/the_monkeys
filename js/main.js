@@ -2,7 +2,7 @@
 function ProductVal()
 {
 	var enquiry_type = document.getElementById('enquiry_type');
-	if(enquiry_type.selectedIndex == 2)
+	if(enquiry_type.selectedIndex == 3)
 	{
 		var fieldset= document.getElementById('product_info');
 		var fieldtags= ['input', 'textarea', 'select'];
